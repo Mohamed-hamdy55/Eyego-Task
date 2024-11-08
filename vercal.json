@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "mern-backend",
+    "builds": [
+      {
+        "src": "backend/server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/v2/(.*)",
+        "dest": "/backend/server.js"
+      }
+    ]
+  }
