@@ -129,7 +129,7 @@ exports.updateTask = catchAsyncErrors(async (req, res,next) => {
   }
 });
 
-// Get all tasks with pagination, search , optional state filtering
+// Get task info with task_id 
 exports.getTaskInfo = catchAsyncErrors(async (req, res,next) => { 
   try {
     const user_id = req.user._id;
